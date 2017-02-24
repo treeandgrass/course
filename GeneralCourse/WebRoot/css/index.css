@@ -1,0 +1,64 @@
+@CHARSET "UTF-8";
+*{
+	margin:0 auto;
+	padding:0;
+}
+
+body{
+	position:relative;
+	min-width:1200px;
+	width:auto;
+}
+
+a:link {text-decoration:none;color:black;}
+a:visited {text-decoration:none;}
+a:hover {text-decoration:underline;}
+
+table{
+	margin:0 auto;
+	width:995px;
+	height:775px;
+	background-color:#f4f8fc;
+  	border-collapse:collapse;
+}
+
+td{
+	padding:10px;
+}
+
+.content{
+	font-size:13px;
+	display:block;
+	margin-top:-80px;
+}
+
+#firstRow{
+	height:50px;
+}
+
+.firstColumn{
+	width:575px;
+}
+
+#secondRow{
+	height:185px;
+}
+
+.titleImg{
+	margin-left:5px;
+}
+
+.title{
+	font-family:"SimHei";
+}
+
+.titleEn{
+	color:#9988a5;
+	font-size:10px;
+	font-family:"Arial";
+}
+
+.resourceImg{
+	border:1px solid #d7d4d4;
+	margin:10px;
+}

@@ -1,0 +1,107 @@
+@CHARSET "UTF-8";
+
+*{
+	margin:0 auto;
+	padding:0;
+}
+
+.outbody{
+	position:relative;
+	min-width:1200px;
+	background-color:blue;
+	height:1000px;
+}
+
+.loginbody{
+	position:relative;
+	width:800px;
+	height:500px;
+}
+
+.login{
+	position:absolute;
+	margin-top:130px;
+	width:700px;
+	height:400px;
+	background-color:gray;
+}
+
+
+form {
+	position:absolute;
+	margin-left:100px;
+	width:700px;
+	height:300px;
+}
+
+.title{
+	margin-top:30px;
+	height:100px;
+	width:600px;
+}
+
+.title p:nth-child(2){
+	margin-top:20px;
+	font-size:30px;
+}
+
+.ul_font{
+	float:left;
+	width:80px;
+	height:200px;
+	list-style-type:none;	
+}
+
+.ul_input{
+	float:left;
+	width:220px;
+	height:200px;
+	list-style-type:none;
+}
+
+.submit{
+	float:left;
+	width:100px;
+	height:100px;
+}
+
+ul li{
+	margin-top:10px;
+}
+
+ul li input{
+	width:220px;
+	height:30px;
+}
+
+input[type="button"]{
+	width:50px;
+}
+
+ul li p{
+	height:30px;
+	line-height:40px;
+}
+
+.submit input[type="submit"]{
+	display:block;
+	margin-top:21px;
+	width:80px;
+	height:80px;
+}
+
+.number{
+	float:left;
+	width:100px;
+	height:300px;
+}
+
+.number img{
+	display:block;
+	width:80px;
+	height:30px;
+	margin-top:90px;
+}
+
+
+

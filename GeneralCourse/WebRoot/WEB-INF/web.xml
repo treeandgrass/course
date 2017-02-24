@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>GeneralCourse</display-name>
+  <!-- <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>JSP/leftIndex.jsp</welcome-file>
+    <welcome-file>JSP/container.jsp</welcome-file>
+  </welcome-file-list> -->
+  
+  <!-- 过滤 -->
+  <filter>
+  	<display-name>baseFilter</display-name>
+  	<filter-name>baseFilter</filter-name>
+  	<filter-class>com.cqut.generalCourse.servlet.BaseFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>baseFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping> 
+   
+   
+  <servlet>
+  	<display-name>index</display-name>
+  	<servlet-name>index</servlet-name>
+  	<servlet-class>com.cqut.generalCourse.servlet.IndexServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>index</servlet-name>
+  	<url-pattern>/index</url-pattern>
+  </servlet-mapping>
+  
+  <!--首页请求  -->
+  <servlet>
+  	<servlet-name>indexRequest</servlet-name>
+  	<servlet-class>com.cqut.generalCourse.servlet.IndexRequestServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>indexRequest</servlet-name>
+  	<url-pattern>/indexRequest</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 文件上传请求 -->
+  <servlet>
+  	<servlet-name>fileUpload</servlet-name>
+  	<servlet-class>com.cqut.generalCourse.servlet.FileUploadServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>fileUpload</servlet-name>
+  	<url-pattern>/fileUpload</url-pattern>
+  </servlet-mapping>
+  
+  <!-- jsTree请求 -->
+  <servlet>
+  	<servlet-name>jsServlet</servlet-name>
+  	<servlet-class>com.cqut.generalCourse.servlet.JsTreeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>jsServlet</servlet-name>
+  	<url-pattern>/jsTreeServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <!--课程简介-->
+	  
+  <servlet>
+  	<servlet-name>articleContent</servlet-name>
+  	<servlet-class>com.cqut.generalCourse.servlet.ContentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>articleContent</servlet-name>
+  	<url-pattern>/articleContent</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!-- 课程动态 -->
+  <servlet>
+  	<servlet-name>dynamicCourse</servlet-name>
+  	<servlet-class>com.cqut.generalCourse.servlet.ContentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>dynamicCourse</servlet-name>
+  	<url-pattern>/courseDynamic</url-pattern>
+  </servlet-mapping>
+  
+  	<!--课程动态详细页面  -->
+	<servlet>
+		<servlet-name>articleDetail</servlet-name>
+		<servlet-class>com.cqut.generalCourse.servlet.ContentServlet</servlet-class>
+	</servlet>  	
+  	<servlet-mapping>
+  		<servlet-name>articleDetail</servlet-name>
+  		<url-pattern>/articleDetail</url-pattern>
+  	</servlet-mapping>
+  
+	<!--实现页面跳转  -->
+	<servlet>
+		<servlet-name>location</servlet-name>
+		<servlet-class>com.cqut.generalCourse.servlet.LocationServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>location</servlet-name>
+		<url-pattern>/location</url-pattern>
+	</servlet-mapping>	
+	
+	<!-- 教学课件 -->
+	<servlet>
+		<servlet-name>courseWare</servlet-name>
+		<servlet-class>com.cqut.generalCourse.servlet.ContentServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>courseWare</servlet-name>
+		<url-pattern>/courseware</url-pattern>
+	</servlet-mapping>
+		
+	<!-- 教学视频 -->
+	<servlet>
+		<servlet-name>courseVideo</servlet-name>
+		<servlet-class>com.cqut.generalCourse.servlet.ContentServlet</servlet-class>		
+	</servlet>	
+	<servlet-mapping>
+		<servlet-name>courseVideo</servlet-name>
+		<url-pattern>/coursevideo</url-pattern>
+	</servlet-mapping>	
+		
+	<!-- 详情页面 -->
+	<servlet>
+		<servlet-name>detailPage</servlet-name>
+		<servlet-class>com.cqut.generalCourse.servlet.ContentServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>detailPage</servlet-name>
+		<url-pattern>/detailPage</url-pattern>
+	</servlet-mapping>
+  
+  	<!-- 文件下载-->
+  	<servlet>
+  		<servlet-name>fileDownload</servlet-name>
+  		<servlet-class>com.cqut.generalCourse.servlet.FileDownload</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>fileDownload</servlet-name>
+  		<url-pattern>/filedownload</url-pattern>
+  	</servlet-mapping>
+  	
+  
+  	<!-- ===============后台======================= -->
+  
+  	<!--图片验证码  -->
+  	<servlet>
+  		<servlet-name>imageValide</servlet-name>
+  		<servlet-class>com.cqut.generalCourse.servlet.ImageValideServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>imageValide</servlet-name>
+  		<url-pattern>/imageValide</url-pattern>
+  	</servlet-mapping>
+  
+  	
+  	<!-- 后台登陆 servlet-->
+  	<servlet>
+  		<servlet-name>login</servlet-name>
+  		<servlet-class>com.cqut.generalCourse.servlet.LoginServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>login</servlet-name>
+  		<url-pattern>/login</url-pattern>
+  	</servlet-mapping>
+  	
+  	<!-- 退出 servlet-->
+  	<servlet>
+  		<servlet-name>logout</servlet-name>
+  		<servlet-class>com.cqut.generalCourse.servlet.LogoutServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>logout</servlet-name>
+  		<url-pattern>/admin/logout</url-pattern>
+  	</servlet-mapping>
+  
+  <!-- 登陆页面 -->
+  <servlet>
+  	<servlet-name>AdminLogin</servlet-name>
+  	<servlet-class>com.cqut.generalCourse.servlet.LoginJspServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AdminLogin</servlet-name>
+  	<url-pattern>/admin/login</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description></description>
+    <display-name>Index</display-name>
+    <servlet-name>Index</servlet-name>
+    <servlet-class>com.cqut.generalCourse.servlet.Index</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Index</servlet-name>
+    <url-pattern>/Index</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>AdminIndex</display-name>
+    <servlet-name>AdminIndex</servlet-name>
+    <servlet-class>com.cqut.generalCourse.servlet.AdminIndex</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminIndex</servlet-name>
+    <url-pattern>/admin/Index</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>TimeServlet</display-name>
+    <servlet-name>TimeServlet</servlet-name>
+    <servlet-class>com.cqut.generalCourse.servlet.TimeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TimeServlet</servlet-name>
+    <url-pattern>/TimeServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>UserServlet</display-name>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>com.cqut.generalCourse.servlet.UserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/UserServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>UserList</display-name>
+    <servlet-name>UserList</servlet-name>
+    <servlet-class>com.cqut.generalCourse.servlet.UserList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserList</servlet-name>
+    <url-pattern>/admin/UserList</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>UserDetail</display-name>
+    <servlet-name>UserDetail</servlet-name>
+    <servlet-class>com.cqut.generalCourse.servlet.UserDetail</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserDetail</servlet-name>
+    <url-pattern>/admin/UserDetail</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>UserEdit</display-name>
+    <servlet-name>UserEdit</servlet-name>
+    <servlet-class>com.cqut.generalCourse.servlet.UserEdit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserEdit</servlet-name>
+    <url-pattern>/admin/UserEdit</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>UserDelete</display-name>
+    <servlet-name>UserDelete</servlet-name>
+    <servlet-class>com.cqut.generalCourse.servlet.UserDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserDelete</servlet-name>
+    <url-pattern>/admin/UserDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>UserAdd</display-name>
+    <servlet-name>UserAdd</servlet-name>
+    <servlet-class>com.cqut.generalCourse.servlet.UserAdd</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserAdd</servlet-name>
+    <url-pattern>/admin/UserAdd</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>RoleServlet</display-name>
+    <servlet-name>RoleServlet</servlet-name>
+    <servlet-class>com.cqut.generalCourse.servlet.RoleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RoleServlet</servlet-name>
+    <url-pattern>/RoleServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>RoleList</display-name>
+    <servlet-name>RoleList</servlet-name>
+    <servlet-class>com.cqut.generalCourse.servlet.RoleList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RoleList</servlet-name>
+    <url-pattern>/admin/RoleList</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>RoleAdd</display-name>
+    <servlet-name>RoleAdd</servlet-name>
+    <servlet-class>com.cqut.generalCourse.servlet.RoleAdd</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RoleAdd</servlet-name>
+    <url-pattern>/admin/RoleAdd</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>RoleEdit</display-name>
+    <servlet-name>RoleEdit</servlet-name>
+    <servlet-class>com.cqut.generalCourse.servlet.RoleEdit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RoleEdit</servlet-name>
+    <url-pattern>/admin/RoleEdit</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ModuleServlet</display-name>
+    <servlet-name>ModuleServlet</servlet-name>
+    <servlet-class>com.cqut.generalCourse.servlet.ModuleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ModuleServlet</servlet-name>
+    <url-pattern>/ModuleServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ModuleList</display-name>
+    <servlet-name>ModuleList</servlet-name>
+    <servlet-class>com.cqut.generalCourse.servlet.ModuleList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ModuleList</servlet-name>
+    <url-pattern>/admin/ModuleList</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ModuleAdd</display-name>
+    <servlet-name>ModuleAdd</servlet-name>
+    <servlet-class>com.cqut.generalCourse.servlet.ModuleAdd</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ModuleAdd</servlet-name>
+    <url-pattern>/admin/ModuleAdd</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ModuleEdit</display-name>
+    <servlet-name>ModuleEdit</servlet-name>
+    <servlet-class>com.cqut.generalCourse.servlet.ModuleEdit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ModuleEdit</servlet-name>
+    <url-pattern>/admin/ModuleEdit</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ColumnServlet</display-name>
+    <servlet-name>ColumnServlet</servlet-name>
+    <servlet-class>com.cqut.generalCourse.servlet.ColumnServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ColumnServlet</servlet-name>
+    <url-pattern>/ColumnServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ColumnList</display-name>
+    <servlet-name>ColumnList</servlet-name>
+    <servlet-class>com.cqut.generalCourse.servlet.ColumnList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ColumnList</servlet-name>
+    <url-pattern>/admin/ColumnList</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ColumnAdd</display-name>
+    <servlet-name>ColumnAdd</servlet-name>
+    <servlet-class>com.cqut.generalCourse.servlet.ColumnAdd</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ColumnAdd</servlet-name>
+    <url-pattern>/admin/ColumnAdd</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ColumnEdit</display-name>
+    <servlet-name>ColumnEdit</servlet-name>
+    <servlet-class>com.cqut.generalCourse.servlet.ColumnEdit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ColumnEdit</servlet-name>
+    <url-pattern>/admin/ColumnEdit</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ArticleServlet</display-name>
+    <servlet-name>ArticleServlet</servlet-name>
+    <servlet-class>com.cqut.generalCourse.servlet.ArticleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ArticleServlet</servlet-name>
+    <url-pattern>/ArticleServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ArticleList</display-name>
+    <servlet-name>ArticleList</servlet-name>
+    <servlet-class>com.cqut.generalCourse.servlet.ArticleList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ArticleList</servlet-name>
+    <url-pattern>/admin/ArticleList</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ArticleAdd</display-name>
+    <servlet-name>ArticleAdd</servlet-name>
+    <servlet-class>com.cqut.generalCourse.servlet.ArticleAdd</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ArticleAdd</servlet-name>
+    <url-pattern>/admin/ArticleAdd</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ArticleEdit</display-name>
+    <servlet-name>ArticleEdit</servlet-name>
+    <servlet-class>com.cqut.generalCourse.servlet.ArticleEdit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ArticleEdit</servlet-name>
+    <url-pattern>/admin/ArticleEdit</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ArticleReviewList</display-name>
+    <servlet-name>ArticleReviewList</servlet-name>
+    <servlet-class>com.cqut.generalCourse.servlet.ArticleReviewList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ArticleReviewList</servlet-name>
+    <url-pattern>/admin/ArticleReviewList</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ArticleReview</display-name>
+    <servlet-name>ArticleReview</servlet-name>
+    <servlet-class>com.cqut.generalCourse.servlet.ArticleReview</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ArticleReview</servlet-name>
+    <url-pattern>/admin/ArticleReview</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description></description>
+    <display-name>PermissionServlet</display-name>
+    <servlet-name>PermissionServlet</servlet-name>
+    <servlet-class>com.cqut.generalCourse.servlet.PermissionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PermissionServlet</servlet-name>
+    <url-pattern>/PermissionServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Permission</display-name>
+    <servlet-name>Permission</servlet-name>
+    <servlet-class>com.cqut.generalCourse.servlet.Permission</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Permission</servlet-name>
+    <url-pattern>/admin/Permission</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

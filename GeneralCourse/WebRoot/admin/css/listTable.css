@@ -1,0 +1,26 @@
+.dataTable{
+	border-collapse:collapse;
+}
+
+.dataTable, .dataTable td, .dataTable th
+{
+	border:1px solid #ddd;
+}
+
+.dataTable td{
+	padding: 8px 8px 4px 4px;
+	line-height: 1.428571429;
+	text-align:center;
+}
+.dataTable .title{
+	background: #ddd;
+	color: #000;
+}
+.page-list .pagination {float:left;}
+.page-list .pagination span {cursor: pointer;}
+.page-list .pagination .separate span{cursor: default; border-top:none;border-bottom:none;}
+.page-list .pagination .separate span:hover {background: none;}
+.page-list .page-total {float:left; margin: 25px 20px;}
+.page-list .page-total input, .page-list .page-total select{height: 26px; border: 1px solid #ddd;}
+.page-list .page-total input {width: 40px; padding-left:3px;}
+.page-list .page-total select {width: 50px;}

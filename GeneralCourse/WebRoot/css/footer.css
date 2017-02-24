@@ -1,0 +1,42 @@
+@CHARSET "UTF-8";
+.footer{
+	margin:0 auto;
+	width:100%;
+	min-width:1200px;
+	height:150px;
+	}
+
+.footer .line{
+	width:100%;
+	height:10px;
+	background-color:#C8292D;
+}	
+
+.footer .bottom{
+	margin:0 auto;
+	width:100%;
+	height:135px;
+	color:white;
+	font-size:15px;
+	text-align:center;
+	background-color:#C8292D;
+}
+
+.footer .declare{
+	width:500px;
+	height:60px;
+	line-height:30px;
+	vertical-align:middle;
+}
+
+.footer .set{
+	height:5px;
+	width:auto;
+}
+
+.footer .address{
+	width:500px;
+	height:20px;
+	line-height:30px;
+	vertical-align:middle;
+}

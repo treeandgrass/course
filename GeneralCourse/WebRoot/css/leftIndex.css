@@ -1,0 +1,72 @@
+@CHARSET "UTF-8";
+/**
+首页副导航栏样式
+*/
+.leftIndexColumn{
+	width:250px;
+	height:auto;
+	background-color:white;
+	text-align:center;
+	
+}
+
+.leftIndexColumn h1{
+	color:white;
+	width:250px;
+	height:50px;
+	background-color:#C8292D;
+}
+
+.leftIndexColumn ul{
+	border:1px solid black;
+	background-color:#EBEBEB;
+	width:200px;
+	overflow-x:hidden;
+	max-height:350px;
+}
+
+.leftIndexColumn ul li{
+	width:200px;
+	height:40px;
+	border-bottom:1px solid white;
+	list-style-type:none;
+}
+
+.leftIndexColumn ul li a{
+	color:black;
+	text-decoration:none;
+}
+
+.leftIndexColumn .leftsearch{
+	width:250px;
+	height:30px;
+	margin-top:10px;
+	margin-bottom:5px;	
+}
+
+.leftIndexColumn .leftsearch input{
+	width:190px;
+	height:30px;
+	float:left;
+	background-color:white;
+	border:2px solid #EBEBEB;
+	
+}
+
+.leftIndexColumn .leftsearch .span{
+	width:60px;
+	height:30px;
+	float:left;
+	background-color:#EBEBEB;
+}
+
+.leftIndexColumn .leftsearch .spanchild{
+	width:30px;
+	height:30px;
+	font-size:25px;
+	background-color:#E53C3E;
+}
+
+.leftIndexColumn ul li a:hover,a:active{
+	cursor:hand;
+}

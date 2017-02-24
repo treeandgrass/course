@@ -1,0 +1,21 @@
+#allRole{
+	position:absolute;
+	height:90%;
+	width:50%;
+}
+
+#allModule{
+	position:relative;
+	height:90%;
+	left:50%;
+	width:50%;
+}
+
+#message{
+	position:relative;
+	height:10%;
+	width:30%;
+	top:50px;
+	left:30%;
+	color:red;
+}

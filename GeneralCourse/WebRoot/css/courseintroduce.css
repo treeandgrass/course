@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+
+.section{
+	position:relative;
+	width:1200px;
+	height:600px;
+}
+
+.lefttheme{
+	float:left;
+	width:260px;
+	height:600px;
+	
+}
+
+.righttheme{
+	float:left;
+	width:900px;
+	height:600px;
+	margin-left:40px;
+}
+
+.localframe{
+	width:900px;
+	height:530px;
+	border:0;
+}
+
+
+
+
+
