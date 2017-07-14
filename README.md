@@ -18,7 +18,7 @@
 * [栏目添加](https://github.com/treeandgrass/course/blob/master/GeneralCourse/src/com/cqut/generalCourse/servlet/ColumnAdd.java)  
 
 * [文章条目预览](https://github.com/treeandgrass/course/blob/master/GeneralCourse/src/com/cqut/generalCourse/servlet/ArticleReviewList.java) 
-* [用户详情展示]([https://github.com/treeandgrass/course/blob/master/GeneralCourse/src/com/cqut/generalCourse/servlet/UserDetail.java)  
+* [用户详情展示](https://github.com/treeandgrass/course/blob/master/GeneralCourse/src/com/cqut/generalCourse/servlet/UserDetail.java)  
 * [文章编辑](https://github.com/treeandgrass/course/blob/master/GeneralCourse/src/com/cqut/generalCourse/servlet/ArticleEdit.java)
 * [文章预览](https://github.com/treeandgrass/course/blob/master/GeneralCourse/src/com/cqut/generalCourse/servlet/ArticleReview.java) 
 * [文章添加](https://github.com/treeandgrass/course/blob/master/GeneralCourse/src/com/cqut/generalCourse/servlet/ArticleAdd.java)
